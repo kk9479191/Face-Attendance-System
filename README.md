@@ -30,4 +30,17 @@ This system detects faces in real-time using webcam, recognizes registered users
 ---
 
 ## 📂 Project Structure
+FaceAttendance/
+│
+├── dataset/
+├── templates/
+│ ├── login.html
+│ ├── dashboard.html
+│ ├── camera.html
+│
+├── app.py
+├── main.py
+├── train.py
+├── attendance.csv
+├── encodings.pickle
 
