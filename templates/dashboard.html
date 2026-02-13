@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+        .camera {
+            background: green;
+        }
+        .refresh {
+            background: blue;
+        }
+        table {
+            margin: auto;
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 60%;
+            background: white;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        th {
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Attendance Dashboard</h2>
+
+<a href="/start-camera">
+    <button class="btn camera">Start Camera</button>
+</a>
+
+<a href="/dashboard">
+    <button class="btn refresh">Refresh</button>
+</a>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Time</th>
+    </tr>
+
+    {% for row in records %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
