@@ -44,3 +44,49 @@ FaceAttendance/
 ├── attendance.csv
 ├── encodings.pickle
 
+
+---
+
+## ⚙️ How To Run
+
+### 1️⃣ Install Dependencies
+
+
+### 2️⃣ Train Faces
+
+
+### 3️⃣ Run Web App
+
+
+---
+
+## 🔐 Default Login
+
+Username: admin  
+Password: admin123  
+
+---
+
+## 📸 Working Demo
+
+- Detects face from webcam
+- Recognizes trained user
+- Stores name + timestamp in attendance.csv
+- Displays records on dashboard
+
+---
+
+## 📌 Future Improvements
+
+- Database Integration (MySQL)
+- Cloud Deployment
+- Mobile Responsive UI
+- Email Notifications
+- Multi-user Authentication
+
+---
+
+## 👨‍💻 Author
+
+Karan Kumar Genaram  
+B.Tech CSE (Cloud + AI)  
